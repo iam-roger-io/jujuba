@@ -1,0 +1,7 @@
+{
+	"serviceName": "service",
+	"applicationPlanName": "aplicationplan",
+	"applicationName": "aplication",
+	"ipa": true,
+	"cub": true
+}
