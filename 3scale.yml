@@ -1,7 +1,7 @@
 {
-	"serviceName": "service",
-	"applicationPlanName": "aplicationplan",
-	"applicationName": "aplication",
+	"serviceName": "service2",
+	"applicationPlanName": "aplicationplan2",
+	"applicationName": "aplication2",
 	"ipa": true,
 	"cub": true
 }
