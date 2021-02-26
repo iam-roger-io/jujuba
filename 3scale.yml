@@ -3,5 +3,33 @@ applicationPlanName: aplicationplan
 applicationName: aplication2
 ipa: true
 cub: true
-backend: ""
-
+backend: 
+  <proxy>
+  <service_id>37</service_id>
+  <endpoint>https://service-3scale-apicast-production.apps.usiminastest.lab.upshift.rdu2.redhat.com</endpoint>
+  <api_backend/>
+  <credentials_location>query</credentials_location>
+  <auth_app_key>app_key</auth_app_key>
+  <auth_app_id>app_id</auth_app_id>
+  <auth_user_key>user_key</auth_user_key>
+  <error_auth_failed>Authentication failed</error_auth_failed>
+  <error_auth_missing>Authentication parameters missing</error_auth_missing>
+  <error_status_auth_failed>403</error_status_auth_failed>
+  <error_headers_auth_failed>text/plain; charset=us-ascii</error_headers_auth_failed>
+  <error_status_auth_missing>403</error_status_auth_missing>
+  <error_headers_auth_missing>text/plain; charset=us-ascii</error_headers_auth_missing>
+  <error_no_match>No Mapping Rule matched</error_no_match>
+  <error_status_no_match>404</error_status_no_match>
+  <error_headers_no_match>text/plain; charset=us-ascii</error_headers_no_match>
+  <error_limits_exceeded>Usage limit exceeded</error_limits_exceeded>
+  <error_status_limits_exceeded>429</error_status_limits_exceeded>
+  <error_headers_limits_exceeded>text/plain; charset=us-ascii</error_headers_limits_exceeded>
+  <secret_token>Shared_secret_sent_from_proxy_to_API_backend_4bca8f65e17c005d</secret_token>
+  <sandbox_endpoint>https://service-3scale-apicast-staging.apps.usiminastest.lab.upshift.rdu2.redhat.com</sandbox_endpoint>
+  <api_test_path>/</api_test_path>
+  <policies_config>[{"name"=>"apicast", "humanName"=>"APIcast policy", "description"=>"Main functionality of APIcast.", "configuration"=>{}, "version"=>"builtin", "enabled"=>true, "removable"=>false, "id"=>"apicast-policy"}]</policies_config>
+  <created_at>2021-02-25 18:48:52 UTC</created_at>
+  <updated_at>2021-02-25 18:48:54 UTC</updated_at>
+  <deployment_option>hosted</deployment_option>
+  <lock_version>0</lock_version>
+  </proxy>
