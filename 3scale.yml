@@ -1,7 +1,7 @@
-{
-   "serviceName": "service2",
-   "applicationPlanName": "aplicationplan2",
-   "applicationName": "aplication2",
-   "ipa": true,
-   "cub": true
-}
+serviceName: service2
+applicationPlanName: aplicationplan
+applicationName: aplication2
+ipa: true
+cub: true
+backend: ""
+
